@@ -21,6 +21,8 @@ jobs:
           cache-dependency-path: website/yarn.lock   
 
       - name: Install and Build 🔧
+        env:
+         PUBLIC_URL: https://aljesusg.github.io/community/
         run: make build          
 
       - name: Deploy 🚀
